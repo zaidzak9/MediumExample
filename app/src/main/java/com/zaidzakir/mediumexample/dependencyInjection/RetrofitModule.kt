@@ -22,7 +22,7 @@ object RetrofitModule{
 
     @Singleton
     @Provides
-    fun provideKanyeWestApi() = Retrofit.Builder()
+    fun provideKanyeWestApi():KanyeWestApi = Retrofit.Builder()
         .baseUrl(BASE_URL)
         .addConverterFactory(GsonConverterFactory.create())
         .build()
